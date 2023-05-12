@@ -1,0 +1,33 @@
+{
+    "FID": "24b3sdf4353fc220",
+    "identifier": 2,
+    "CaptureID": 3,
+    "changeType_source": "insert",
+    "attribute1": "Under Construction",
+    "Geometry": "Geo223",
+    "CaptureDate": "2020-12-31T00:00:00",
+    "pathLinkInfo": {
+        "sourceFID": "MissingFID",
+        "formOfWay": "Path",
+        "pathName": null,
+        "alternateName": null,
+        "captureSpecification": "Urban",
+        "heightingMethod": "DTM",
+        "surfaceType": "Sealed on surface",
+        "cycleFacility": null,
+        "matchStatus": "Matched",
+        "startGradeSeparation": 0,
+        "endGradeSeparation": 0,
+        "elevationGain": {
+            "elevationInDirection": 0,
+            "elevationAgainstDirection": 1.3
+        },
+        "startNode": "147b7a78-04bf-4f9a-801d-61dc534a0a5",
+        "endNode": "eb7f6122-f765-4113-8b77-908934437ee96",
+        "fictitious": false,
+        "formsPartOfPath": null,
+        "formsPartOfStreet": [
+            "4fb3afad-2c56-4946-83d1-d734508705e2"
+        ]
+    }
+  }
