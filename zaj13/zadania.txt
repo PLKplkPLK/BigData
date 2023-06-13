@@ -1,0 +1,3 @@
+dodałem logi w DataReader
+dystrybucja danych w Storage
+logi w driver logs (spark UI)
