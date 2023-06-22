@@ -1,0 +1,24 @@
+Data lake - file oriented, głównie kolekcjonowanie raw danych, nie sprawdza jakości danych. Rozwiązało problem z tym, że można tam wstawić jakiekolwiek dane: tekst, wideo itp. - używane w ML.
+Data warehouse - curating data (logika, organizacja, struktura na danych). Bazy danych mogą wysyłać dane do data warehouse, przez procesy ETL.
+
+Data lake do zbierania raw danych, data warehouse do ustrukturyzowania, zorganizowania danych.
+
+Używa się ich obu wzajemnie - takie połączenie data LAKE i wareHOUSE to data lakehouse.
+
+
+Zad 1.
+
+Proces modelowania danych - proces w którym tworzymy reprezentację systemu informatycji - tabele i relacje między nimi. Dane są "rozbijane": atrybuty trafiają do różnych tabel - dane zamieniane na 3NF, aby uniknąć duplikatów i tworzone są relacje między tymi tabelami. Można też zastosować denormalizację danych, aby przyspieszyć późniejsze procesy odczytywania informacji.
+
+Kardynalność to typ relacji między tabelami. Są to relacje: 1-1 (kiedy jednemu wierszowi tabeli 1 odpowiada jeden wiersz z tabeli 2), many-1 (kiedy jednemu wierszowi tabeli 1 może odpowiadać kilka wierszy z tabeli 2) lub many-many(kiedy jednemu wierszowi tabeli 1 może odpowiadać kilka wierszy z tabeli 2 i vice versa).
+
+Normalizacja danych to usuwanie duplikatów z danych poprzez tworzenie nowych tabel, a w istniejących tworzyć tylko odpowiadające usuniętym danym klucze. Denormalizacja jest procesem odwrotnym, stosuje się ją gdy zależy nam bardziej na szybkości odczytu danych, w zamian za rozmiar danych.
+
+Data Mart to podzbiór danych z Data Warehouse należących do konkretnej kategorii - konkretnego działu w firmie.
+
+Lakehouse to architektura przetwarzania danych która łączy podejścia typu Data Lake i Data Warehouse. Problemem z hurtowniami było to, że dane musiały być ustrukturyzowane, nie było jak wstawić tam danych tekstowych, wideo itp. Takie dane natomiast można było przechowywać w Data Lake. Lakehouse połączył zalety obu tych sposobów przechowywania danych.
+
+
+Zad 2.
+
+OLAP (Online Analitycal Data Processing) - metoda analizowania dużych ilości danych (z hurtowni danych). Dane w hurtowniach dzieli się na kostki danych. Kostki te to struktura danych dzięki której można przeprowadzać szybką analizę biznesową, są to wielowymiarowe hipersześciany (przykładowe wymiary: sprzedawca, koszt, miejsce, data). Dzięki nim łatwo można zauważyć trendy czy korelacje w danych.
